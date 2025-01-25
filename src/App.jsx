@@ -26,7 +26,7 @@ function App() {
         </section>
         <section className={styles.sectionList}>
           {isLoading && !isError && <Loader />}
-          {isError && <ErrorMessages />}
+          {isError && <ErrorMessages message={isError} />}
           {!isLoading && !isError && <ContactsList />}
         </section>
       </main>
