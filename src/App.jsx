@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers } from "./redux/users/operations.js";
 import { selectIsLoading, selectIsError } from "./redux/users/selectors.js";
-import UsersList from "./components/UsersList/UsersList.jsx";
+
 import FilterBox from "./components/FilterBox/FilterBox.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -26,7 +26,6 @@ function App() {
         <section className={styles.sectionList}>
           {isLoading && !isError && <Loader />}
           {isError && <div>errr</div>}
-          {!isLoading && !isError && <UsersList />}
         </section>
       </main>
       <Footer />
