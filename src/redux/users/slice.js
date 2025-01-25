@@ -1,6 +1,6 @@
 import { createSelector, createSlice, isAnyOf } from "@reduxjs/toolkit";
-import { fetchUsers } from "./operations";
-import { selectUsers } from "./selectors";
+import { fetchUsers } from "./operations.js";
+import { selectUsers } from "./selectors.js";
 import {
   selectedNameFilter,
   selectedSortKey,

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ThemeContext, themes } from "../contexts/ThemeContext";
+import { ThemeContext, themes } from "../contexts/ThemeContext.jsx";
 
 const getTheme = () => {
   const theme = `${window?.localStorage?.getItem("theme")}`;

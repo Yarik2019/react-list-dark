@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { testApi } from "../service/configApi";
-import { errToast, successfullyToast } from "../../utils/toast";
+import { testApi } from "../service/configApi.js";
+import { errToast, successfullyToast } from "../../utils/toast.js";
 export const fetchUsers = createAsyncThunk(
   "users/fetchAll",
   async (_, thunkAPI) => {

@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
-import UserItem from "../userItem/UserItem";
+import UserItem from "../userItem/UserItem.jsx";
 import styles from "./UsersList.module.css";
-// import { selectUsers } from "../../redux/users/selectors";
-import { selectFilteredUsers } from "../../redux/users/slice";
+import { selectFilteredUsers } from "../../redux/users/slice.js";
 const UsersList = () => {
   const users = useSelector(selectFilteredUsers);
 

@@ -1,11 +1,11 @@
 import styles from "./FilterBox.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { changeFilter, handleSort } from "../../redux/filters/slice";
+import { changeFilter, handleSort } from "../../redux/filters/slice.js";
 import {
   selectedNameFilter,
   selectedSortKey,
   selectedSortOrder,
-} from "../../redux/filters/selectors";
+} from "../../redux/filters/selectors.js";
 const FilterBox = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectedNameFilter);

@@ -1,7 +1,7 @@
-import Modal from "../Modal/Modal";
+import Modal from "../Modal/Modal.jsx";
 import styles from "./UserItem.module.css";
-import UserModal from "../Modal/UserModal/UserModal";
-import { useToggle } from "../../hooks/useToggle";
+import UserModal from "../Modal/UserModal/UserModal.jsx";
+import { useToggle } from "../../hooks/useToggle.jsx";
 
 const UserItem = ({ user }) => {
   const { isOpen, openModel, closeModel } = useToggle();

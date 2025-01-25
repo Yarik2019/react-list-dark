@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import styles from "./App.module.css";
-import UsersList from "./components/usersList/UsersList";
-import FilterBox from "./components/FilterBox/FilterBox";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUsers } from "./redux/users/operations";
-import { selectIsLoading, selectIsError } from "./redux/users/selectors";
-import Loader from "./components/Loader/Loader";
+import { fetchUsers } from "./redux/users/operations.js";
+import { selectIsLoading, selectIsError } from "./redux/users/selectors.js";
+import UsersList from "./components/usersList/UsersList.jsx";
+import FilterBox from "./components/FilterBox/FilterBox.jsx";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Loader from "./components/Loader/Loader.jsx";
 import { Toaster } from "react-hot-toast";
 function App() {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { ThemeContext, themes } from "../../contexts/ThemeContext";
-import Toggle from "../Toggle/Toggle";
+import { ThemeContext, themes } from "../../contexts/ThemeContext.jsx";
+import Toggle from "../Toggle/Toggle.jsx";
 import styles from "./Header.module.css";
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);
