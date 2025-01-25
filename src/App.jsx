@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers } from "./redux/users/operations.js";
 import { selectIsLoading, selectIsError } from "./redux/users/selectors.js";
-import UsersList from "./components/usersList/UsersList";
+import UsersList from "./components/usersList/UsersList.jsx";
 import FilterBox from "./components/FilterBox/FilterBox.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
