@@ -7,7 +7,6 @@ const ContactsList = () => {
   const users = useSelector(selectFilteredUsers);
   return (
     <div className={styles.blockList}>
-      dsadas
       {users.length ? (
         <ul className={styles.usersList}>
           {users.map((user) => (
