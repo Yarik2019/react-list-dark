@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-// import UserItem from "../userItem/UserItem.jsx";
+import ContactsItem from "../ContactsItem/ContactsItem.jsx";
 import styles from "./ContactsList.module.css";
 import { selectFilteredUsers } from "../../redux/users/slice.js";
 
@@ -11,8 +11,7 @@ const ContactsList = () => {
       {users.length ? (
         <ul className={styles.usersList}>
           {users.map((user) => (
-            <div key={user.id}> dsadas</div>
-            // <UserItem key={user.id} user={user} />
+            <ContactsItem key={user.id} user={user} />
           ))}
         </ul>
       ) : (
