@@ -1,0 +1,35 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  font-size: 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .errorContainer {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .errorContainer {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .errorContainer {
+    font-size: 1.125rem;
+    padding: 1.25rem;
+  }
+}

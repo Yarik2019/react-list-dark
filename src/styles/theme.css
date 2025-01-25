@@ -9,6 +9,8 @@
   --input-red: #ef5050;
   --black: #2f2f2f;
   --modal-backdrop: rgba(47, 47, 47, 0.6);
+  --error-bg: #fce4e4;
+  --error-text: #d8000c;
   --menu-backdrop-color-light: rgba(50, 63, 71, 0.4);
   transition: background-color 500ms ease, color 500ms ease;
 }
@@ -24,6 +26,8 @@
   --input-red: #ff8080;
   --black: #d9d9d9;
   --modal-backdrop: rgba(0, 0, 0, 0.8);
+  --error-bg: #4f1c1c;
+  --error-text: #ff8080;
   --menu-backdrop-color-light: rgba(255, 255, 255, 0.2);
   transition: background-color 500ms ease, color 500ms ease;
 }
