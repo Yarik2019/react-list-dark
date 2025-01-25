@@ -1,0 +1,29 @@
+:root[data-theme="light"] {
+  --background-white: #ffffff;
+  --bg-btn-dark-gray: #323f47;
+  --bg-component-gray: #f0eff4;
+  --bg-component-green: #9be1a0;
+  --bg-component-dark-green: #87d28d;
+  --dark-gray-calendar: rgba(50, 63, 71, 0.2);
+  --text-color: #323f47;
+  --input-red: #ef5050;
+  --black: #2f2f2f;
+  --modal-backdrop: rgba(47, 47, 47, 0.6);
+  --menu-backdrop-color-light: rgba(50, 63, 71, 0.4);
+  transition: background-color 500ms ease, color 500ms ease;
+}
+/* Темная тема */
+:root[data-theme="dark"] {
+  --background-white: #1e1e1e;
+  --bg-btn-dark-gray: #505c66;
+  --bg-component-gray: #292929;
+  --bg-component-green: #5b8a60;
+  --bg-component-dark-green: #4f7956;
+  --dark-gray-calendar: rgba(255, 255, 255, 0.1);
+  --text-color: #ffffff;
+  --input-red: #ff8080;
+  --black: #d9d9d9;
+  --modal-backdrop: rgba(0, 0, 0, 0.8);
+  --menu-backdrop-color-light: rgba(255, 255, 255, 0.2);
+  transition: background-color 500ms ease, color 500ms ease;
+}

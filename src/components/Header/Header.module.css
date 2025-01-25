@@ -1,0 +1,183 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-component-gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.containerHeader {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.logoHighlight {
+  color: red;
+}
+
+.nav {
+  display: flex;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.navList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  display: inline-block;
+}
+
+.navLink {
+  font-size: 16px;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--bg-component-dark-green);
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--bg-component-dark-green);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .header {
+    z-index: 1000;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--bg-component-gray);
+    transform: translateX(-200%);
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav.open {
+    transform: translate(0, -2px);
+    z-index: 999;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .actions {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .navList {
+    gap: 15px;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .containerHeader {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navList {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navLink {
+    font-size: 16px;
+  }
+
+  .burger {
+    display: none;
+  }
+}

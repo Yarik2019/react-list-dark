@@ -1,0 +1,27 @@
+.blockList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-white);
+  color: var(--text-color);
+  transition: background-color 500ms ease, color 500ms ease;
+}
+
+.usersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 20px;
+}
