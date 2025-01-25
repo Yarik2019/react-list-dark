@@ -1,13 +1,14 @@
-import { useSelector } from "react-redux";
-import UserItem from "../userItem/UserItem.jsx";
+// import { useSelector } from "react-redux";
+// import UserItem from "../userItem/UserItem.jsx";
 import styles from "./ContactsList.module.css";
-import { selectFilteredUsers } from "../../redux/users/slice.js";
+// import { selectFilteredUsers } from "../../redux/users/slice.js";
 
 const ContactsList = () => {
-  const users = useSelector(selectFilteredUsers);
+  //   const users = useSelector(selectFilteredUsers);
   return (
     <div className={styles.blockList}>
-      {users.length ? (
+      dsadas
+      {/* {users.length ? (
         <ul className={styles.usersList}>
           {users.map((user) => (
             <UserItem key={user.id} user={user} />
@@ -15,7 +16,7 @@ const ContactsList = () => {
         </ul>
       ) : (
         <p className={styles.text}>Нажаль пустий список</p>
-      )}
+      )} */}
     </div>
   );
 };
